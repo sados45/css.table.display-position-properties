@@ -1,0 +1,39 @@
+table,th,td{
+ border:1px solid blue;
+border-collapse:collapse; /* bu özellik tablo icindeki cizgileri teke düsürüyor.*/
+}
+
+/* Mesela ayni özellileri p ve h1, h2 gibi basliklara vermek istersek söyle yapiypariz.
+p,h1,h2{
+    color:red
+    border:1px solid red...
+}
+*/
+table{
+
+    width:80%; /* parent elemente göre oranliyor. yani body e göre oranliyor.*/
+    margin:auto; /*bulundugu yeree göre ortaliyor.*/
+}
+thead{
+    color:blue;
+    
+}
+
+ td{
+    height:30px; /*satirlar arasinin yüksekligini ayarliyor.*/
+    text-align:center;
+    vertical-align:bottom; /*dikine de ortaliyor. */
+
+}
+
+td:hover{
+    background-color: aqua;
+}
+
+tr:hover{
+    background-color: chartreuse;
+}
+tr:nth-child(even){
+    background-color: yellow; /* ikinci ve dördüncü satirlari sariya boyadi. even yerine (odd) yazsaydim sadece 1,3,5 gibi tek sayili satirlari sariya boyayacakti.
+*/
+}
